@@ -10,4 +10,4 @@ unidades = numero % 10
 
 Scifras = millares + centenas + decenas + unidades
 
-print ( f"Scifras: {Scifras:.2f}")
+print ( f"Scifras: {Scifras: }")
