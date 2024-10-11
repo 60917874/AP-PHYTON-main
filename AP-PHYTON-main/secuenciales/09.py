@@ -3,11 +3,13 @@ os.system("cls")
 
 numero = int ( input ( "numero positivo: ") )
 
-millares = numero // 1000
-centenas = (numero // 100) % 10
-decenas = (numero // 10) % 10
-unidades = numero % 10
+c1 = numero // 1000
+numero %= 1000
+c2 = numero // 100 
+numero %= 100
+c3 = numero // 10 
+c4 = numero % 10
 
-Scifras = millares + centenas + decenas + unidades
+Scifras = c1 + c2 + c3 + c4
 
-print ( f"Scifras: {Scifras: }")
+print ( f"Scifras = {(c1 + c2 + c3 + c4)}")
