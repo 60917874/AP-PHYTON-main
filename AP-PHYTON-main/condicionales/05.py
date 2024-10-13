@@ -11,7 +11,5 @@ else:
     cifraMenor = min(cifras)
     
     mayor = cifraMayor * 10 + cifraMenor
-    menor = cifraMenor * 10 + cifraMayor
-    
-    total = max(mayor, menor)
-    print ( f"Mayor numero: {total}" )
+
+    print ( f"Mayor numero: {mayor}" )
