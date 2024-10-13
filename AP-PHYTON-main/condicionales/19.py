@@ -1,7 +1,7 @@
 import os
 os.system("cls")
 
-sexo = input ( "Sexo: " ).upper()
+sexo = input ( "Sexo: " )
 edad = int ( input ( "Edad: ") )
 
 if sexo == "F":
