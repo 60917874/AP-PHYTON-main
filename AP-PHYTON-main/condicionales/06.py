@@ -1,5 +1,5 @@
 import os
-os.system
+os.system("cls")
 
 primeraEdad = int ( input ( "Primera edad: ") )
 segundaEdad = int (input ( "Segunda edad: ") )
