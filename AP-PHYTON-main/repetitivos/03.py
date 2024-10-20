@@ -1,15 +1,16 @@
 import os
 os.system("cls")
 
-def contarDivisores(numero):
-    contador = 0
-    for i in range(1, numero + 1):
-        if numero % i == 0: 
-            contador += 1
-    return contador
+def divisores (numero, divisor=1):
+    if divisor > numero:
+        return 0
+    
+    if numero % divisor == 0:
+        return 1 + divisores (numero, divisor + 1)
+    else:
+        return divisores (numero, divisor + 1)
 
-numero = int(input("Numero entero: "))
-
-cantidad = contarDivisores(numero)
+numero = int(input("Número: "))
+cantidad = divisores (numero)
 
 print(f"Cantidad de divisores de {numero} es: {cantidad}")
