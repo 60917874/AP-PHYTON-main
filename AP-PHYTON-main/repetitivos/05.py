@@ -1,11 +1,14 @@
 import os
 os.system("cls")
 
-def tabla(n):
-    for i in range (1, 13):
-        resultado = n * i
-        print (f"{n} X {i} = {resultado}")
+def tabla (n, i = 1):
+    
+    if i > 12:
+        return
+    resultado = n * i
+    print(f"{n} X {i} = {resultado}")
 
-numero = int ( input ("Numero: ") )
+    tabla(n, i + 1)
 
-tabla(numero)
+numero = int(input("Número: "))
+tabla (numero)
