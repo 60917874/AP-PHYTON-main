@@ -2,12 +2,16 @@ import os
 os.system("cls")
 
 def tabla (num, inicio, fin):
-    for i in range(inicio, fin + 1):
-        resultado = num * i
-        print(f"{num} x {i} = {resultado}")
+    
+    if inicio > fin:
+        return
+    resultado = num * inicio
+    print ( f"{num} x {inicio} = {resultado}" )
+    
+    tabla (num, inicio + 1, fin)
 
-numero = int(input("Numero: "))
-inicio = int(input("inicio: "))
-fin = int(input("Fin: "))
+numero = int (input ("Número: "))
+inicio = int (input ("Inicio: "))
+fin = int (input ("Fin: "))
 
 tabla (numero, inicio, fin)
