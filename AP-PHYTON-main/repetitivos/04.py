@@ -1,16 +1,13 @@
 import os
 os.system("cls")
 
-def multiplos (n, m):
-    contador = 0
-    multiplo = n 
+def multiplos (n, m, contador = 0):
     
-    while contador < m:
-        print(multiplo)
-        multiplo += n 
-        contador += 1
+    if contador < m:
+        print (n * (contador + 1) )
+        multiplos (n, m, contador + 1)
 
-numero = int(input("Numero : "))
-cantidad = int(input("Cantidad de múltiplos: "))
+numero = int( input("Número: ") )
+cantidad = int( input("Cantidad de múltiplos: ") )
 
-multiplos(numero, cantidad)
+multiplos (numero, cantidad)
